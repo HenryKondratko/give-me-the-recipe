@@ -1,3 +1,7 @@
+.input-and-label-container{
+    width: 45%;
+}
+
 .input-box-container {
     display: block;
 }
@@ -8,4 +12,5 @@
 
 .url-input-box{
     width: 100%;
+    margin-top: 1em;
 }

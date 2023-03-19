@@ -1,5 +1,6 @@
 import './App.css';
 import InputBox from "./components/InputBox";
+import SubmitButton from "./components/SubmitButton";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <header className="App-header">
                 <h1>Give Me The Recipe</h1>
                 <InputBox/>
+                <SubmitButton/>
             </header>
         </div>
     );
