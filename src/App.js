@@ -7,10 +7,8 @@ function App() {
             <title>Give Me The Recipe</title>
             <header className="App-header">
                 <h1>Give Me The Recipe</h1>
+                <InputBox/>
             </header>
-            <body>
-            <InputBox/>
-            </body>
         </div>
     );
 }

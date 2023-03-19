@@ -3,7 +3,7 @@ import App from './App';
 
 describe("give me the recipe page tests", () => {
 
-test('renders learn react link', () => {
+test('renders page', () => {
   render(<App />);
   const pageTitle = screen.getByRole('heading', {name: /give me the recipe/i})
   expect(pageTitle).toBeInTheDocument();
