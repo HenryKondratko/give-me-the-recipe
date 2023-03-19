@@ -1,4 +1,5 @@
 import './App.css';
+import InputBox from "./components/InputBox";
 
 function App() {
     return (
@@ -8,8 +9,7 @@ function App() {
                 <h1>Give Me The Recipe</h1>
             </header>
             <body>
-            <label htmlFor="url">Enter URL and hit Submit</label>
-            <input type="text" id="url"/>
+            <InputBox/>
             </body>
         </div>
     );
