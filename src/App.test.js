@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-describe("give me the recipe page tests", () => {
+describe('give me the recipe page tests', () => {
 
 test('renders page', () => {
   render(<App />);
