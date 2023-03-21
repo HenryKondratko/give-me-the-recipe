@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import './InputBox.css';
 
-const InputBox = () => {
-    const [input, setInput] = useState("");
+const InputBox = (props) => {
+
     const changeHandler = (event) => {
-        setInput(event.target.value);
+        props.setRecipeUrl(event.target.value);
     }
 
     useEffect(() => {
-        console.log(input);
-    }, [input])
+        console.log(props.recipeUrl);
+    }, [props.recipeUrl])
 
     return (
         <div className="input-and-label-container">
@@ -22,7 +22,7 @@ const InputBox = () => {
                     type="text"
                     id="url"
                     onChange={changeHandler}
-                    value={input}
+                    value={props.recipeUrl}
                 />
             </div>
         </div>
