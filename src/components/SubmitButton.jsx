@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const SubmitButton = () => {
+const SubmitButton = (props) => {
     const [showModal, setShowModal] = useState(false);
 
     const handleClose = () => setShowModal(false);
@@ -18,17 +18,18 @@ const SubmitButton = () => {
                 show={showModal}
                 onHide={handleClose}
                 centered
+                fullscreen={true}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>Here is your recipe:</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body><h2>{props.recipeUrl}</h2></Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
                     <Button variant="primary" onClick={handleClose}>
-                        Save Changes
+                        Print Recipe
                     </Button>
                 </Modal.Footer>
             </Modal>

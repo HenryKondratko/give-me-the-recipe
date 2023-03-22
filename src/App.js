@@ -12,7 +12,7 @@ function App() {
             <div className="App-container">
                 <h1>Give Me The Recipe</h1>
                 <InputBox recipeUrl={recipeUrl} setRecipeUrl={setRecipeUrl}/>
-                <SubmitButton/>
+                <SubmitButton recipeUrl={recipeUrl}/>
             </div>
         </div>
     );
