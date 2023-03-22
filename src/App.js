@@ -9,11 +9,11 @@ function App() {
     return (
         <div className="App">
             <title>Give Me The Recipe</title>
-            <header className="App-header">
+            <div className="App-container">
                 <h1>Give Me The Recipe</h1>
                 <InputBox recipeUrl={recipeUrl} setRecipeUrl={setRecipeUrl}/>
                 <SubmitButton/>
-            </header>
+            </div>
         </div>
     );
 }
